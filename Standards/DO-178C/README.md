@@ -1,11 +1,11 @@
-DO-178C --- Software Considerations in Airborne Systems and Equipment Certification
+# DO-178C --- Software Considerations in Airborne Systems and Equipment Certification
 
 Purpose of this document: A practical V&V study and reference
 guide for this repository. It explains DO-178C concepts in original
 wording, connects them to verification engineering, and provides
 worked examples. It is not a reproduction of the DO-178C standard.
 
-1. What is DO-178C?
+## 1. What is DO-178C?
 
 DO-178C, Software Considerations in Airborne Systems and Equipment
 Certification, is the principal industry guidance document used to
@@ -27,7 +27,7 @@ Verification is one part of a broader life-cycle assurance framework
 covering planning, development, verification, configuration management,
 quality assurance, and certification liaison.
 
-2. Purpose and Scope
+## 2. Purpose and Scope
 
 The purpose of DO-178C is to provide a systematic approach for achieving
 confidence in the software used in airborne systems and equipment.
@@ -58,7 +58,7 @@ organizational structure. It establishes objectives and associated
 activities/data; an approved project defines how those objectives are
 implemented.
 
-3. Software Levels / DAL A--E
+## 3. Software Levels / DAL A--E
 
 DO-178C defines five software levels based on the consequences of
 anomalous software behavior.
@@ -93,7 +93,7 @@ It is incorrect to think:
 DAL describes the potential safety consequence associated with
 failure, not the quality of the code.
 
-4. DO-178C Life-Cycle Processes
+## 4. DO-178C Life-Cycle Processes
 
 The major software life-cycle processes can be viewed as:
 
@@ -153,7 +153,7 @@ Certification Liaison
 Coordinates certification-related activities and communication with the
 certification authority or designated representatives.
 
-5. Planning Process
+## 5. Planning Process
 
 Planning establishes the project's approach to satisfying the applicable
 DO-178C objectives.
@@ -205,7 +205,7 @@ A V&V engineer should understand the Software Verification Plan
 (SVP) and how verification activities map to requirements, design
 data, source code, test environments, coverage objectives, and evidence.
 
-6. Development Processes
+## 6. Development Processes
 
 The development processes produce the software items that must
 subsequently be verified.
@@ -251,7 +251,7 @@ Interface analysis
 The verification method should be appropriate to the item and objective
 being verified.
 
-7. Verification Process
+## 7. Verification Process
 
 Verification provides evidence that development outputs satisfy their
 specified requirements and applicable verification objectives.
@@ -312,7 +312,7 @@ operational purpose?
 In a DO-178C project, the formal verification framework is centered on
 verification objectives and evidence across the software life cycle.
 
-8. Configuration Management
+## 8. Configuration Management
 
 Configuration management ensures that the correct versions of software
 and life-cycle data are identified, controlled, and reproducible.
@@ -363,7 +363,7 @@ Git is a tool; configuration management is the controlled process around
 identifying, reviewing, approving, baselining, and tracking
 configuration items.
 
-9. Software Quality Assurance
+## 9. Software Quality Assurance
 
 Software Quality Assurance (SQA) provides confidence that the software
 life-cycle processes and standards are being followed and that required
@@ -399,7 +399,7 @@ applicable requirements and verification objectives.
 SQA provides independent process assurance that the defined
 processes and associated standards are followed.
 
-10. Certification Liaison
+## 10. Certification Liaison
 
 Certification liaison connects the development organization with the
 certification authority and the certification basis/process.
@@ -422,7 +422,7 @@ In the FAA context, AC 20-115D describes DO-178C as an acceptable means,
 but not the only means, of showing compliance for applicable software
 aspects.
 
-11. Requirements Traceability
+## 11. Requirements Traceability
 
 Traceability demonstrates relationships between development and
 verification artifacts.
@@ -477,7 +477,7 @@ REQ-ACT-001
 A traceability matrix should allow an engineer to identify missing
 verification or unexplained implementation.
 
-12. Requirements-Based Testing
+## 12. Requirements-Based Testing
 
 Requirements-based testing derives test conditions from requirements
 rather than merely trying to execute as much code as possible.
@@ -514,7 +514,7 @@ Passing all tests does not automatically prove that every structural
 coverage objective has been satisfied. Requirements-based testing and
 structural coverage answer related but different questions.
 
-13. Structural Coverage
+## 13. Structural Coverage
 
 Structural coverage examines which structural elements of the
 implementation were exercised by the verification tests.
@@ -558,7 +558,7 @@ Additional Verification / Analysis
 For higher DAL software, applicable structural coverage objectives
 become increasingly rigorous.
 
-14. Statement Coverage
+## 14. Statement Coverage
 
 Statement coverage asks whether each executable statement has been
 executed by the test set.
@@ -586,7 +586,7 @@ has been exercised.
 It also does not demonstrate independence of individual conditions
 within a compound decision.
 
-15. Decision Coverage
+## 15. Decision Coverage
 
 Decision coverage examines whether the outcomes of a decision have been
 exercised.
@@ -622,7 +622,7 @@ However, a test set achieving decision coverage does not necessarily
 demonstrate that A and B independently affect the decision. That is
 where MC/DC becomes important.
 
-16. MC/DC --- Modified Condition/Decision Coverage
+## 16. MC/DC --- Modified Condition/Decision Coverage
 
 MC/DC demonstrates that each individual condition within a decision has
 an independent effect on the decision outcome, subject to the applicable
@@ -694,7 +694,7 @@ MC/DC is not simply "test every TRUE/FALSE combination." The objective
 is to demonstrate the required independent effect of each condition on
 the decision.
 
-17. Verification Independence
+## 17. Verification Independence
 
 Verification independence means that, where independence is required,
 the verification activity is performed with sufficient separation from
@@ -716,7 +716,7 @@ approved plans.
 Independence should be treated as a defined project process, not as an
 informal statement that someone else "looked at it."
 
-18. Verification Objectives
+## 18. Verification Objectives
 
 A verification objective is a specific outcome that the applicable
 life-cycle process must satisfy.
@@ -761,7 +761,7 @@ Therefore:
 Test pass ≠ automatically equivalent to complete DO-178C objective
 satisfaction.
 
-19. Software Life-Cycle Data
+## 19. Software Life-Cycle Data
 
 Life-cycle data is the documented information produced during software
 development and verification.
@@ -831,7 +831,7 @@ Other agreed certification deliverables
 The exact set of life-cycle data is project-specific and depends on the
 applicable objectives, plans, and certification approach.
 
-20. SOI Reviews
+## 20. SOI Reviews
 
 SOI means Stage of Involvement.
 
@@ -874,7 +874,7 @@ Verification evidence
 Important: SOI stages are certification involvement activities; they
 should not be treated as four generic software development phases.
 
-21. Relationship Between DO-178C and Its Supplements
+## 21. Relationship Between DO-178C and Its Supplements
 
 DO-178C is the core airborne software document.
 
@@ -911,7 +911,7 @@ DO-254 addresses airborne electronic hardware and therefore belongs to
 the broader hardware assurance domain rather than being a DO-178C
 software supplement.
 
-22. Practical V&V Example
+## 22. Practical V&V Example
 
 Consider a fictional airborne actuator controller.
 
@@ -1002,7 +1002,7 @@ Problem report, if applicable
 
 This is a demonstration only; it is not a certification artifact.
 
-23. Repository Demonstrations & References
+## 23. Repository Demonstrations & References
 
 The repository should turn the concepts above into practical
 demonstrations.
@@ -1063,17 +1063,17 @@ Use authoritative sources for claims about certification and the
 standards:
 
 RTCA --- DO-178C and related software standards
-https://www.rtca.org/do-178/
+<https://www.rtca.org/do-178/>
 
 FAA AC 20-115D --- Airborne Software Development Assurance Using
 EUROCAE ED-12( ) and RTCA DO-178( )
-https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_20-115D.pdf
+<https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_20-115D.pdf>
 
 FAA AC 20-115D document page
-https://www.faa.gov/regulations_policies/advisory_circulars/index.cfm/go/document.information/documentID/1032046
+<https://www.faa.gov/regulations_policies/advisory_circulars/index.cfm/go/document.information/documentID/1032046>
 
 FAA --- Software and Airborne Electronic Hardware
-https://www.faa.gov/aircraft/air_cert/design_approvals/air_software/software_regs
+<https://www.faa.gov/aircraft/air_cert/design_approvals/air_software/software_regs>
 
 Reference discipline
 
